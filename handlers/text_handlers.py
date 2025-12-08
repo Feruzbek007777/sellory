@@ -46,17 +46,20 @@ def parse_ref_token(args: str) -> Optional[int]:
 
 def send_main_menu(bot: TeleBot, chat_id: int, user_id: int):
     text = (
-        "💎 Premium xizmatlar BEPUL!\n\n"
-        "Do'stlarni taklif qiling va referal orqali ball to'plang:\n"
-        "1 ta odam taklifi == +1 ball \n\n"
-        "Telegram Gift= 7 ta referral\n"
-        "Canva Pro = 10 ta referral\n"
-        "Perplexity = 19 ta referral\n"
-        "Gemini AI = 18 ta referral\n"
-        "ChatGPT Plus = 20 ta referral\n"
-        "Telegram Premium = 29 ta referral\n"
-        "SuperGrok = 55 ta referral\n"
+        "💎 PREMIUM XIZMATLAR — BEPUL! 💥\n\n"
+        "👥 Do'stlarni taklif qiling va referal orqali ball to'plang:\n"
+        "1 ta odam taklifi = ➕1 ball 🎯\n\n"
+        "🎁 Mukofotlar ro‘yxati:\n\n"
+        "✨ Telegram Gift = 7 ta referral\n"
+        "🎨 Canva Pro = 10 ta referral\n"
+        "🧠 Perplexity = 19 ta referral\n"
+        "🔮 Gemini AI = 18 ta referral\n"
+        "🤖 ChatGPT Plus = 20 ta referral\n"
+        "⭐ Telegram Premium = 29 ta referral\n"
+        "🐉 SuperGrok = 55 ta referral\n\n"
+        "🔥 Do‘stlaringizni taklif qiling — mukofotlar sizni kutmoqda!"
     )
+
     kb = main_menu_keyboard(is_admin=is_admin(user_id))
     bot.send_message(chat_id, text, reply_markup=kb, parse_mode=None)
 
